@@ -3,9 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>我的手写数字项目</title>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
 </head>
 <body>
     <h1>手写数字识别</h1>
     <p>这是我自己搭建的第一个项目页面。</p>
+    <h2>上传数字图片</h2>
+    <label for="avatar">请上传图片：</label>
+    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+    <button type="button" id="button1">开始识别</button>
+    <p>
+    <output id="num">识别结果：等待输入</output>
+    </p>
+
 </body>
+
 </html>
